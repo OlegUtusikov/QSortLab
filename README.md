@@ -1,8 +1,11 @@
 ## QSortLab
 
-Реализовал последовательную и параллельную версии быстрой сортировки (https://ru.wikipedia.org/wiki/Быстрая_сортировка).\
-Для реализации многопоточной версии использовалась библиотека parlaylib (https://github.com/cmuparlay/parlaylib).\
+Реализовал последовательную и параллельную версии быстрой сортировки (https://ru.wikipedia.org/wiki/Быстрая_сортировка).
+
+Для реализации многопоточной версии использовалась библиотека parlaylib (https://github.com/cmuparlay/parlaylib).
+
 Cравнения с std::sort и parallel на 4 потоках, а также с собственной реализацией qsort представлены ниже.
+
 ### Benchmark: qsort_par
 Time of try 0: 2.11237s\
 Time of try 1: 2.05235s\
