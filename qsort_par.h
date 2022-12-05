@@ -12,6 +12,7 @@
 #include <parlay/sequence.h>
 #include <parlay/random.h>
 #include "utils.h"
+#include "qsort_seq_my.h"
 
 struct qsort_par final {
     qsort_par() = delete;
@@ -55,7 +56,7 @@ private:
             );
         } else {
             parlay::copy(in_slice, out_slice);
-            std::sort(out_slice.begin(), out_slice.end(), cmp);
+            qsort_seq_my::sort(out_slice, cmp);
         }
     }
 };
